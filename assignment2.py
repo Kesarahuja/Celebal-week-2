@@ -16,10 +16,18 @@ class LinkedList:
         if not self.head:
             self.head = new_node
             return
-
-        # otherwise, find  last node and link the new node there 
         current= self.head
         while current.next:
             current =current.next
         current.next=new_node
 
+    def print_list(self):
+        if not self.head:
+            print("list is empty.")
+            return
+
+        current = self.head
+        while current:
+            print(current.data, end=" -> ")
+            current = current.next
+        print("None")  # end of list
