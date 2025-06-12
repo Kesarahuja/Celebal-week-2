@@ -1,9 +1,9 @@
-# node class represents a single element in the linked list
+# node class gives a single element in linked list
 class Node:
     def __init__(self, data):
         self.data=data    
         self.next=None    
-# LinkedList class handles all the logic related to the list
+# LinkedList class handles all logic of list
 class LinkedList:
     def __init__(self):
         self.head = None 
@@ -12,7 +12,7 @@ class LinkedList:
         # adds a new node to end list.
         new_node=Node(data)
 
-        # if the list is empty then new node becomes the head
+        # if list is empty then new node becomes the head
         if not self.head:
             self.head = new_node
             return
