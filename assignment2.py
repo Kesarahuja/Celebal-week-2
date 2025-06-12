@@ -74,3 +74,17 @@ if __name__ == "__main__":
         my_list.print_list()
     except Exception as e:
         print("Error:",e)
+    #deleting node that doesn't exist
+    try:
+        my_list.delete_nth_node(10)
+    except Exception as e:
+        print("\nError while deleting 10th node:", e)
+    try:
+        my_list.delete_nth_node(1)
+        my_list.delete_nth_node(1)
+        my_list.delete_nth_node(1)
+        print("\nAfter deleting all nodes:")
+        my_list.print_list()
+        my_list.delete_nth_node(1)
+    except Exception as e:
+        print("\nError while deleting from empty list:", e)
