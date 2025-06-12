@@ -88,3 +88,23 @@ if __name__ == "__main__":
         my_list.delete_nth_node(1)
     except Exception as e:
         print("\nError while deleting from empty list:", e)
+
+
+#EXAMPLE OUTPUT
+# Initial list:
+# 10 -> 20 -> 30 -> 40 -> None
+# 10 -> 20 -> 30 -> 40 -> None
+
+# After deleting the 2nd node:
+# 10 -> 30 -> 40 -> None
+# 10 -> 30 -> 40 -> None
+
+# Error while deleting 10th node: Index out of range. Cannot delete node.
+# 10 -> 30 -> 40 -> None
+# 30 -> 40 -> None
+# 40 -> None
+
+# After deleting all nodes:
+# list is empty.
+
+# Error while deleting from empty list: List is empty. Nothing to delete.
