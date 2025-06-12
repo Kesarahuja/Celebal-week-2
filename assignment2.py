@@ -31,3 +31,7 @@ class LinkedList:
             print(current.data, end=" -> ")
             current = current.next
         print("None") 
+#deleting nodes
+    def delete_nth_node(self, n):
+        if not self.head:
+            raise Exception("List is empty. Nothing to delete.")
