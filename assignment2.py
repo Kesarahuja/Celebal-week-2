@@ -1,15 +1,15 @@
 # node class represents a single element in the linked list
 class Node:
     def __init__(self, data):
-        self.data=data    # actual data stored in node
-        self.next=None    # Pointer to node 
+        self.data=data    
+        self.next=None    
 # LinkedList class handles all the logic related to the list
 class LinkedList:
     def __init__(self):
-        self.head = None  # initially the list is empty
+        self.head = None 
 
     def add_node(self, data):
-        # adds a new node with the given data to the end of the list.
+        # adds a new node to end list.
         new_node=Node(data)
 
         # if the list is empty then new node becomes the head
@@ -30,4 +30,4 @@ class LinkedList:
         while current:
             print(current.data, end=" -> ")
             current = current.next
-        print("None")  # end of list
+        print("None") 
