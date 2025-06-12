@@ -55,3 +55,22 @@ class LinkedList:
         if not current or not current.next:
             raise Exception("Index out of range. Cannot delete node.")
         current.next = current.next.next
+
+# for example usage 
+if __name__ == "__main__":
+    my_list = LinkedList()
+    my_list.add_node(10)
+    my_list.add_node(20)
+    my_list.add_node(30)
+    my_list.add_node(40)
+
+    print("Initial list:")
+    my_list.print_list()
+
+    #deleting 
+    try:
+        my_list.delete_nth_node(2)
+        print("\nAfter deleting the 2nd node:")
+        my_list.print_list()
+    except Exception as e:
+        print("Error:",e)
